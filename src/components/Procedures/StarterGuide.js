@@ -43,7 +43,7 @@ export default function Guia() {
         </Typography>
         <Typography variant="subtitle2" align="center" color="textSecondary">
           Se recomienda, antes que todo, leer la{" "}
-          <a href="localhost:8000/static/resolucion000831.pdf" target="_blank">
+          <a href={`${process.env.REACT_APP_API_URL}/static/resolucion000831.pdf`} download target="_blank">
             resolucion Nro. 000831
           </a>
           , sobre el procedimiento para presentacion de plan de cambio de uso de

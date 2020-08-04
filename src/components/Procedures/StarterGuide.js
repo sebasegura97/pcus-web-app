@@ -1,6 +1,5 @@
 import React from "react";
 import { Typography, Grid, Divider, makeStyles } from "@material-ui/core";
-import PictureAsPdfIcon from "@material-ui/icons/PictureAsPdf";
 
 const useStyles = makeStyles({
   container: {

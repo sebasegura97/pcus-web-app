@@ -3,7 +3,6 @@ import { Typography, Grid, Divider, CircularProgress } from "@material-ui/core";
 import DateFnsUtils from "@date-io/date-fns";
 import {
   MuiPickersUtilsProvider,
-  KeyboardTimePicker,
   KeyboardDatePicker,
 } from "@material-ui/pickers";
 import { useLazyQuery } from "@apollo/react-hooks";

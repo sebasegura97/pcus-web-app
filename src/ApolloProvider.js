@@ -15,10 +15,7 @@ let cache = new InMemoryCache();
 //   process.env.NODE_ENV === "development"
 //     ? "http://localhost:8000/graphql"
 //     : "https://try-it.tech";
-const uri =
-  process.env.NODE_ENV === "production"
-    ? `${process.env.REACT_APP_API_URL}`
-    : "http://localhost:4000";
+const uri = process.env.REACT_APP_API_URL
 console.log("uri", uri);
 
 const link = createUploadLink({ uri });

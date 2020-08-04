@@ -84,11 +84,16 @@ function Content({ isLoggedIn, role }) {
     return (
       <MuiThemeProvider theme={theme}>
         <Fragment>
-          <Redirect from="/" to="/login" exact strict/>
-          <Route path="/login" component={LoginPage} />
-          <Route path="/register" component={RegisterPage} />
-          <Route path="/forgot-password" component={ForgotPasswordPage} />
-          <Route path="/reset-password/:userId/:token" component={ResetPasswordPage} />
+          <Switch>
+            <Route path="/login" component={LoginPage} />
+            <Route path="/register" component={RegisterPage} />
+            <Route path="/forgot-password" component={ForgotPasswordPage} />
+            <Route
+              path="/reset-password/:userId/:token"
+              component={ResetPasswordPage}
+            />
+            <Redirect from="/" to="/login" exact strict />
+          </Switch>
         </Fragment>
       </MuiThemeProvider>
     );

@@ -127,6 +127,7 @@ function DrawerNavigation(props) {
     try {
       localStorage.removeItem("token");
       localStorage.removeItem("refreshToken");
+      history.push("/login")
       client.clearStore();
       window.location.reload();
     } catch (error) {

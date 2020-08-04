@@ -18,7 +18,7 @@ let cache = new InMemoryCache();
 const uri =
   process.env.NODE_ENV === "production"
     ? `${process.env.REACT_APP_API_URL}`
-    : 8000;
+    : "http://localhost:4000";
 console.log("uri", uri);
 
 const link = createUploadLink({ uri });
